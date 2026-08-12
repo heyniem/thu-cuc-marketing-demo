@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="color-scheme" content="light">
+    <meta
+      name="description"
+      content="A fictional marketing portfolio demo for Thu Cuc, featuring campaign strategy, content, and audience-growth case studies."
+    >
+    <title>Thu Cuc — Marketing Portfolio</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <script type="module" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content" data-skip-link>Skip to main content</a>
+
+    <header class="site-header" data-site-header>
+      <div class="nav-shell">
+        <a class="brand" href="#/" data-route-link="/" aria-label="Thu Cuc, home">
+          Thu Cuc
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-menu-toggle
+            hidden
+          >
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul class="nav-links" id="primary-navigation" data-menu>
+            <li><a href="#/" data-route-link="/" data-nav="/">Overview</a></li>
+            <li><a href="#/experience" data-route-link="/experience" data-nav="/experience">Experience</a></li>
+            <li><a href="#/projects" data-route-link="/projects" data-nav="/projects">Case Studies</a></li>
+            <li><a href="#/about" data-route-link="/about" data-nav="/about">About</a></li>
+            <li><a href="#/contact" data-route-link="/contact" data-nav="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section
+        class="route route-home"
+        id="/"
+        data-route="/"
+        data-title="Thu Cuc — Marketing Portfolio"
+        aria-labelledby="home-title"
+      >
+        <section class="hero">
+          <span class="ambient-dot ambient-dot--one" aria-hidden="true"></span>
+          <span class="ambient-dot ambient-dot--two" aria-hidden="true"></span>
+
+          <div class="content-shell hero-grid">
+            <div class="hero-copy">
+              <p class="code-label">// Fictional marketing portfolio demo</p>
+              <h1 id="home-title" tabindex="-1">Thu Cuc</h1>
+              <p class="role-line">Marketing &amp; Growth Specialist</p>
+              <p class="hero-intro">
+                I turn audience insight into clear, memorable campaigns across content,
+                social, email, and digital channels.
+              </p>
+              <div class="button-row">
+                <a class="button button--primary" href="#/experience" data-route-link="/experience">
+                  View Experience <span aria-hidden="true">→</span>
+                </a>
+                <a class="button button--secondary" href="#/projects" data-route-link="/projects">
+                  View Case Studies
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-visual-wrap">
+              <div
+                class="profile-visual"
+                role="img"
+                aria-label="A warm campaign profile diagram representing audience, message, content, and results"
+              >
+                <div class="profile-visual__topline">
+                  <span>campaign.profile</span>
+                  <i aria-hidden="true"></i>
+                </div>
+                <div class="profile-visual__monogram" aria-hidden="true">TC</div>
+                <div class="profile-visual__layers" aria-hidden="true">
+                  <span>01 AUDIENCE</span>
+                  <span>02 MESSAGE</span>
+                  <span>03 CONTENT</span>
+                  <span>04 RESULTS</span>
+                </div>
+                <div class="profile-visual__status">
+                  <i aria-hidden="true"></i>
+                  building better briefs
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-section home-section--plain">
+          <div class="content-shell">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Overview</p>
+              <h2>Executive Summary</h2>
+            </div>
+
+            <div class="summary-grid">
+              <div class="summary-copy">
+                <p>
+                  I enjoy finding the message that makes a brand feel relevant to the right
+                  people. My approach connects research, content planning, channel execution,
+                  and simple reporting so each campaign has a clear purpose.
+                </p>
+                <p>
+                  This site is a fictional presentation demo, designed to show a practical
+                  marketing process from first insight through to content, launch, and learning.
+                </p>
+
+                <div class="summary-cards">
+                  <article class="mini-card">
+                    <strong>04</strong>
+                    <h3>Campaign stages</h3>
+                    <p>Audience · Insight<br>Content · Growth</p>
+                  </article>
+                  <article class="mini-card">
+                    <p class="mini-card__label">Key expertise</p>
+                    <ul>
+                      <li>Campaign planning</li>
+                      <li>Social and content</li>
+                      <li>Reporting and optimisation</li>
+                    </ul>
+                  </article>
+                  <article class="mini-card">
+                    <p class="mini-card__label">Current direction</p>
+                    <p>Brand storytelling, community, and lifecycle marketing.</p>
+                  </article>
+                </div>
+              </div>
+
+              <div
+                class="stack-portrait"
+                role="img"
+                aria-label="Four connected campaign stages: audience, insight, content, and growth"
+              >
+                <p class="stack-portrait__caption">CAMPAIGN PATH / 04 STAGES</p>
+                <ol>
+                  <li><span>01</span><strong>Audience</strong><i>Research · Listening</i></li>
+                  <li><span>02</span><strong>Insight</strong><i>Positioning · Angle</i></li>
+                  <li><span>03</span><strong>Content</strong><i>Social · Email</i></li>
+                  <li><span>04</span><strong>Growth</strong><i>Measure · Learn</i></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="layer-strip" aria-labelledby="layer-strip-title">
+          <div class="content-shell">
+            <p id="layer-strip-title">Working across the campaign</p>
+            <div class="layer-pills">
+              <span><i aria-hidden="true">01</i> Audience</span>
+              <span><i aria-hidden="true">02</i> Message</span>
+              <span><i aria-hidden="true">03</i> Content</span>
+              <span><i aria-hidden="true">04</i> Growth</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-section home-section--plain home-section--compact">
+          <div class="content-shell centered-section">
+            <div class="section-heading section-heading--center">
+              <p class="code-label">// Domains</p>
+              <h2>Marketing Focus</h2>
+            </div>
+            <div class="domain-pills" aria-label="Marketing focus areas">
+              <span>Audience Insight</span>
+              <span>Brand Strategy</span>
+              <span>Content Planning</span>
+              <span>Social Media</span>
+              <span>Email Marketing</span>
+              <span>Community</span>
+              <span>Campaign Launches</span>
+              <span>Performance Reporting</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-section home-section--tinted">
+          <div class="content-shell">
+            <div class="section-heading section-heading--center">
+              <p class="code-label">// Capabilities</p>
+              <h2>Areas of Expertise</h2>
+            </div>
+
+            <div class="expertise-grid">
+              <article class="expertise-card">
+                <div class="symbol-box" aria-hidden="true">01</div>
+                <h3>Campaign Strategy</h3>
+                <ul>
+                  <li>Audience research</li>
+                  <li>Messaging frameworks</li>
+                  <li>Integrated campaign plans</li>
+                  <li>Launch coordination</li>
+                </ul>
+              </article>
+
+              <article class="expertise-card expertise-card--featured">
+                <div class="symbol-box" aria-hidden="true">02</div>
+                <h3>Content &amp; Community</h3>
+                <ul>
+                  <li>Social calendars</li>
+                  <li>Short-form copy</li>
+                  <li>Email newsletters</li>
+                  <li>Community engagement</li>
+                </ul>
+              </article>
+
+              <article class="expertise-card">
+                <div class="symbol-box" aria-hidden="true">03</div>
+                <h3>Performance &amp; Optimisation</h3>
+                <ul>
+                  <li>Reporting dashboards</li>
+                  <li>A/B testing</li>
+                  <li>Channel insights</li>
+                  <li>Conversion improvements</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-section home-section--plain">
+          <div class="content-shell">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Competencies</p>
+              <h2>Core Competencies</h2>
+            </div>
+
+            <div class="competency-layout">
+              <div class="competency-groups">
+                <article>
+                  <h3>Audience</h3>
+                  <ul>
+                    <li>Research and competitor review</li>
+                    <li>Customer personas</li>
+                    <li>Audience themes</li>
+                    <li>Insight synthesis</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3>Content</h3>
+                  <ul>
+                    <li>Brief writing</li>
+                    <li>Social content systems</li>
+                    <li>Email storytelling</li>
+                    <li>Creator and partner coordination</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3>Campaigns</h3>
+                  <ul>
+                    <li>Channel plans</li>
+                    <li>Launch timelines</li>
+                    <li>Reporting frameworks</li>
+                    <li>Test-and-learn approach</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="system-board" role="img" aria-label="A simplified campaign flow map">
+                <div class="system-board__header"><span></span><span></span><span></span> campaign.flow</div>
+                <div class="system-board__canvas" aria-hidden="true">
+                  <div class="system-node system-node--client">AUDIENCE</div>
+                  <div class="system-line system-line--one"></div>
+                  <div class="system-node system-node--api">MESSAGE</div>
+                  <div class="system-line system-line--two"></div>
+                  <div class="system-node system-node--cache">SOCIAL</div>
+                  <div class="system-node system-node--queue">EMAIL</div>
+                  <div class="system-node system-node--db">RESULTS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-section home-section--tinted">
+          <div class="content-shell">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Marketing toolkit</p>
+              <h2>Tools &amp; Platforms</h2>
+            </div>
+
+            <div class="tool-groups">
+              <article>
+                <h3>Planning &amp; Creative</h3>
+                <div><span>Canva</span><span>Figma</span><span>Notion</span><span>Asana</span></div>
+              </article>
+              <article>
+                <h3>Channel &amp; Community</h3>
+                <div><span>Instagram</span><span>LinkedIn</span><span>Mailchimp</span><span>Meta Business Suite</span></div>
+              </article>
+              <article>
+                <h3>Measurement</h3>
+                <div><span>Google Analytics 4</span><span>Looker Studio</span><span>Google Sheets</span></div>
+              </article>
+              <article>
+                <h3>Currently Exploring</h3>
+                <div><span>Marketing research</span><span>Brand building</span><span>Lifecycle marketing</span></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-section home-section--plain">
+          <div class="content-shell">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Selected Work</p>
+              <h2>Featured Project</h2>
+            </div>
+
+            <a class="featured-project" href="#/projects/glow-gather-launch" data-route-link="/projects/glow-gather-launch">
+              <div class="invoice-preview" aria-hidden="true">
+                <div class="invoice-paper">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="extract-panel">
+                  <p>CAMPAIGN BRIEF</p>
+                  <span>audience</span><span>message</span><span>channel</span>
+                </div>
+              </div>
+              <div class="featured-project__content">
+                <span class="date-pill">2026</span>
+                <h3>Glow &amp; Gather Seasonal Launch <span aria-label="fictional demo">(Demo)</span></h3>
+                <p>An integrated launch concept for a fictional lifestyle brand, bringing research, social content, email, and reporting into one campaign.</p>
+                <div class="inline-stack">Audience research · Content calendar · Email journey · Reporting</div>
+                <span class="card-link">View Case Study <i aria-hidden="true">→</i></span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="content-shell">
+            <p class="code-label">// Next</p>
+            <h2>Looking for a marketer who balances story and structure?</h2>
+            <p>Explore the demo work, or start a conversation about content, campaigns, and community.</p>
+            <a class="button button--primary" href="#/contact" data-route-link="/contact">
+              Contact Me <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section
+        class="route inner-route"
+        id="/experience"
+        data-route="/experience"
+        data-title="Marketing Experience — Thu Cuc"
+        aria-labelledby="experience-title"
+      >
+        <div class="content-shell route-content">
+          <header class="route-intro">
+            <p class="code-label">// Fictional demo experience</p>
+            <h1 id="experience-title" tabindex="-1">Marketing Experience</h1>
+            <p>
+              This fictional demo experience shows how I would support an integrated marketing
+              team—from campaign planning through content coordination and reporting.
+            </p>
+          </header>
+
+          <div class="experience-list">
+            <a class="experience-card" href="#/experience/mosaic-market" data-route-link="/experience/mosaic-market">
+              <div class="experience-cover system-cover" aria-hidden="true">
+                <div class="system-cover__label">MOSAIC MARKET CO. / DEMO CAMPAIGN</div>
+                <div class="system-cover__flow">
+                  <span>AUDIENCE</span><i>→</i><span>MESSAGE</span><i>→</i><span>CONTENT</span><i>→</i><span>RESULTS</span>
+                </div>
+                <div class="system-cover__code">SOCIAL · EMAIL · CONTENT · REPORTING</div>
+              </div>
+              <div class="experience-card__body">
+                <div>
+                  <h2>Mosaic Market Co. <span aria-label="fictional demo">(Demo)</span></h2>
+                  <p>Marketing Coordinator · Demo Case Study</p>
+                  <span class="card-link">View Case Study <i aria-hidden="true">→</i></span>
+                </div>
+                <span class="date-pill">2025 — 2026</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="route detail-route"
+        id="/experience/mosaic-market"
+        data-route="/experience/mosaic-market"
+        data-title="Mosaic Market Co. (Demo) — Thu Cuc"
+        aria-labelledby="mosaic-title"
+      >
+        <header class="detail-cover detail-cover--mosaic">
+          <a class="back-button" href="#/experience" data-route-link="/experience"><span aria-hidden="true">←</span> Back</a>
+          <div class="detail-cover__visual" aria-hidden="true">
+            <span class="detail-node detail-node--a">AUDIENCE</span>
+            <span class="detail-node detail-node--b">INSIGHT</span>
+            <span class="detail-node detail-node--c">CONTENT</span>
+            <span class="detail-node detail-node--d">RESULTS</span>
+          </div>
+          <div class="content-shell detail-cover__copy">
+            <h1 id="mosaic-title" tabindex="-1">Mosaic Market Co. (Demo)</h1>
+            <p>Marketing Coordinator · Demo Case Study</p>
+            <span>2025 — 2026</span>
+          </div>
+        </header>
+
+        <div class="content-shell detail-content">
+          <section class="detail-section detail-section--split">
+            <div>
+              <p class="code-label">// Context</p>
+              <h2>Integrated Campaign Support</h2>
+              <p>
+                This fictional demonstration models a marketing coordinator role supporting a
+                seasonal campaign across social, email, and community touchpoints. It shows a
+                practical way to move from audience notes to a usable content plan and review.
+              </p>
+            </div>
+            <div class="context-panel" aria-label="Demo scope">
+              <p>DEMO SCOPE</p>
+              <strong>Audience</strong><span>Young professionals</span>
+              <strong>Channels</strong><span>Social + email</span>
+              <strong>Deliverables</strong><span>Calendar, copy, reporting</span>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Contribution</p>
+              <h2>Campaign Contribution</h2>
+            </div>
+            <div class="responsibility-grid">
+              <article><span>01</span><h3>Planning &amp; Insight</h3><p>Turn audience themes and competitor notes into a focused campaign brief.</p></article>
+              <article><span>02</span><h3>Content Coordination</h3><p>Shape a weekly calendar, refine channel copy, and keep social and email work aligned.</p></article>
+              <article><span>03</span><h3>Reporting &amp; Learning</h3><p>Build a simple dashboard, review early signals, and turn findings into next-step recommendations.</p></article>
+            </div>
+          </section>
+
+          <section class="detail-section detail-section--skills">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Capabilities</p>
+              <h2>Capabilities Practiced</h2>
+            </div>
+            <div class="skill-pills"><span>Content planning</span><span>Audience research</span><span>Social media</span><span>Email marketing</span><span>Campaign reporting</span><span>Canva</span></div>
+          </section>
+
+          <a class="back-to-index" href="#/experience" data-route-link="/experience"><span aria-hidden="true">←</span> Back to Marketing Experience</a>
+        </div>
+      </section>
+
+      <section
+        class="route inner-route"
+        id="/projects"
+        data-route="/projects"
+        data-title="Marketing Case Studies — Thu Cuc"
+        aria-labelledby="projects-title"
+      >
+        <div class="content-shell route-content">
+          <header class="route-intro">
+            <p class="code-label">// Fictional demo work</p>
+            <h1 id="projects-title" tabindex="-1">Selected Marketing Case Studies</h1>
+            <p>
+              Demo work showing my approach to audience insight, campaign concepts, content
+              systems, and practical measurement.
+            </p>
+          </header>
+
+          <div class="project-list">
+            <a class="project-card project-card--featured" href="#/projects/glow-gather-launch" data-route-link="/projects/glow-gather-launch">
+              <span class="date-pill">2026</span>
+              <h2>Glow &amp; Gather Seasonal Launch (Demo)</h2>
+              <p class="project-card__role">Integrated marketing campaign concept</p>
+              <p>
+                A launch concept designed to build awareness and consideration through
+                coordinated social content, email, and creator-ready assets.
+              </p>
+              <div class="inline-stack">Audience research · Content calendar · Email journey · Reporting framework</div>
+              <span class="card-link">View Case Study <i aria-hidden="true">→</i></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="route detail-route"
+        id="/projects/glow-gather-launch"
+        data-route="/projects/glow-gather-launch"
+        data-title="Glow & Gather Seasonal Launch (Demo) — Thu Cuc"
+        aria-labelledby="glow-title"
+      >
+        <header class="detail-cover detail-cover--glow">
+          <a class="back-button" href="#/projects" data-route-link="/projects"><span aria-hidden="true">←</span> Back</a>
+          <div class="invoice-hero-art" aria-hidden="true">
+            <div class="invoice-hero-paper"><span></span><span></span><span></span><span></span></div>
+            <div class="invoice-hero-arrow">→</div>
+            <div class="invoice-hero-data"><b>GO</b><span>seasonal<br>launch plan</span></div>
+          </div>
+          <div class="content-shell detail-cover__copy">
+            <h1 id="glow-title" tabindex="-1">Glow &amp; Gather Seasonal Launch (Demo)</h1>
+            <p>Integrated marketing campaign concept · Fictional demo</p>
+            <span>2026</span>
+          </div>
+        </header>
+
+        <div class="content-shell detail-content">
+          <section class="detail-section detail-section--split">
+            <div>
+              <p class="code-label">// Overview</p>
+              <h2>Making a Small Launch Feel Cohesive</h2>
+              <p>
+                This fictional campaign turns a single launch message into a coordinated set
+                of social, email, and community touchpoints. The work focuses on a clear
+                audience, consistent creative direction, and a lightweight way to learn what
+                resonates.
+              </p>
+            </div>
+            <div class="context-panel">
+              <p>PROJECT PROFILE</p>
+              <strong>Objective</strong><span>Build awareness</span>
+              <strong>Audience</strong><span>Early-career professionals</span>
+              <strong>Deliverables</strong><span>Content, email, reporting</span>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Workflow</p>
+              <h2>Campaign at a Glance</h2>
+            </div>
+            <ol class="workflow-grid">
+              <li><span>01</span><h3>Discover</h3><p>Gather audience signals, competitor notes, and useful launch context.</p></li>
+              <li><span>02</span><h3>Shape</h3><p>Define the positioning, key message, and a clear hierarchy for creative.</p></li>
+              <li><span>03</span><h3>Activate</h3><p>Build a social calendar, email journey, and creator-ready content prompts.</p></li>
+              <li><span>04</span><h3>Measure</h3><p>Review reach, engagement, clicks, and the learnings to take forward.</p></li>
+            </ol>
+          </section>
+
+          <section class="detail-section">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Campaign Questions</p>
+              <h2>Questions Behind the Work</h2>
+            </div>
+            <div class="question-grid">
+              <article><span>01</span><h3>Audience Fit</h3><p>What matters to this audience right now, and where will they be most receptive?</p></article>
+              <article><span>02</span><h3>Message Consistency</h3><p>How can the central idea stay recognisable across short, channel-specific content?</p></article>
+              <article><span>03</span><h3>Learning Loop</h3><p>Which early signals will help the next wave of content become more useful?</p></article>
+            </div>
+          </section>
+
+          <section class="detail-section detail-section--skills">
+            <div class="section-heading section-heading--left">
+              <p class="code-label">// Toolkit</p>
+              <h2>Marketing Tools &amp; Skills</h2>
+            </div>
+            <div class="skill-pills"><span>Audience research</span><span>Copywriting</span><span>Social media</span><span>Email marketing</span><span>Canva</span><span>Google Analytics 4</span></div>
+          </section>
+
+          <a class="back-to-index" href="#/projects" data-route-link="/projects"><span aria-hidden="true">←</span> Back to Selected Case Studies</a>
+        </div>
+      </section>
+
+      <section
+        class="route inner-route"
+        id="/about"
+        data-route="/about"
+        data-title="About This Demo — Thu Cuc"
+        aria-labelledby="about-title"
+      >
+        <div class="content-shell route-content route-content--wide">
+          <header class="centered-intro">
+            <p class="code-label">// About this demo</p>
+            <h1 id="about-title" tabindex="-1">Marketing with Clarity and Curiosity</h1>
+            <p>
+              I am interested in the small decisions that make a message easier to notice,
+              understand, and act on.
+            </p>
+          </header>
+
+          <div class="about-feature">
+            <div class="about-feature__copy">
+              <h2>How I Approach Marketing</h2>
+              <p>
+                I begin with people: what they care about, what they already know, and what
+                might move them forward. From there, I shape ideas into content that is useful,
+                recognisable, and easy for a team to use.
+              </p>
+              <p>
+                I like campaigns that give every channel a role, rather than asking every
+                channel to say the same thing in the same way.
+              </p>
+            </div>
+            <div class="about-principle">
+              <span>MARKETING PRINCIPLE</span>
+              <blockquote>Make every idea easy to understand, easy to act on, and worth remembering.</blockquote>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <article><span>01 / NOW</span><h2>Current Focus</h2><p>Content strategy · Social storytelling · Reporting</p></article>
+            <article><span>02 / INTEREST</span><h2>What I’m Drawn To</h2><p>Brand building · Community · Integrated campaigns</p></article>
+            <article><span>03 / APPROACH</span><h2>How I Work</h2><p>Listen · Simplify · Test · Learn</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="route inner-route"
+        id="/contact"
+        data-route="/contact"
+        data-title="Demo Contact — Thu Cuc"
+        aria-labelledby="contact-title"
+      >
+        <div class="content-shell route-content contact-content">
+          <header class="route-intro route-intro--compact">
+            <h1 id="contact-title" tabindex="-1">Contact Me</h1>
+          </header>
+
+          <div class="contact-grid">
+            <aside class="contact-card">
+              <h2>Demo Contact</h2>
+              <dl>
+                <div><dt aria-label="Name"><span aria-hidden="true">ID</span></dt><dd>Thu Cuc</dd></div>
+                <div><dt aria-label="Role"><span aria-hidden="true">//</span></dt><dd>Marketing &amp; Growth Specialist</dd></div>
+                <div><dt aria-label="Focus"><span aria-hidden="true">+</span></dt><dd>Brand · Content · Campaigns</dd></div>
+                <div><dt aria-label="Status"><span aria-hidden="true">DM</span></dt><dd>Fictional portfolio demo for presentation use</dd></div>
+              </dl>
+            </aside>
+
+            <form class="contact-form" data-contact-form>
+              <h2>Demo Enquiry Form</h2>
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" placeholder="your.email@example.com" autocomplete="email" required>
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="What would you like to discuss?" required></textarea>
+              <button class="button button--primary" type="submit">Submit Demo Enquiry <span aria-hidden="true">→</span></button>
+              <p class="form-note" data-form-note>This is a presentation demo. Submissions are not sent or stored.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="content-shell footer-grid">
+        <strong>Thu Cuc</strong>
+        <div class="footer-links">
+          <a href="#/projects" data-route-link="/projects">Case Studies</a>
+          <a href="#/about" data-route-link="/about">About</a>
+          <a href="#/contact" data-route-link="/contact">Demo Contact</a>
+        </div>
+        <p>© 2026 Thu Cuc. Fictional marketing portfolio demo for presentation use.</p>
+      </div>
+    </footer>
+
+    <noscript>
+      <p class="noscript-note">JavaScript is off. All portfolio sections remain readable on this page.</p>
+    </noscript>
+  </body>
+</html>
