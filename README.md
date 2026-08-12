@@ -1,27 +1,47 @@
-# Thu Cuc — Marketing Portfolio Demo
+# Thu Cúc Nguyễn — Portfolio
 
-A warm, Claude-inspired fictional marketing portfolio demo for Thu Cuc. It presents campaign strategy, content, social, email, and reporting case-study content while retaining the supplied reference site's layout and hash-SPA interaction model.
+A lightweight, accessible portfolio for Thu Cúc Nguyễn, a Marketing & Growth Specialist.
 
-The implementation uses only semantic HTML, responsive CSS, and vanilla JavaScript. It has no framework, package manager, web font, build step, backend, or runtime dependency.
+## What is included
 
-## Run locally
+- Source-backed work across OneLife membership, Garnier Vietnam and EVN Vietnam
+- Clear labels that distinguish reported outcomes, campaign reach, programme targets and planned strategy
+- Responsive hash routes for Home, Work, Experience, About and Contact
+- Direct email, phone and CV links instead of a non-functional contact form
+- A warm ivory and aubergine visual system with keyboard focus, reduced-motion support and responsive layouts
+
+## Work on the source
+
+This is a dependency-free static site. The editable source is in the project root.
+
+## Publish safely
+
+Use the `public/` folder for hosting. It contains only the finished site, its approved assets and the downloadable CV. It deliberately excludes the source portfolio deck and old planning material, which should stay private.
+
+Refresh the folder after source edits:
 
 ```bash
-python3 -m http.server 8080
+./scripts/prepare-public.sh
 ```
 
-Open `http://localhost:8080/#/`.
+Then serve only that folder with any static web server, for example:
+
+```bash
+cd public
+python3 -m http.server 8080 --bind 127.0.0.1
+```
 
 ## Routes
 
 - `/#/`
-- `/#/experience`
-- `/#/experience/mosaic-market`
 - `/#/projects`
-- `/#/projects/glow-gather-launch`
+- `/#/projects/onelife`
+- `/#/projects/garnier`
+- `/#/projects/evn`
+- `/#/experience`
 - `/#/about`
 - `/#/contact`
 
-## Personalize
+## Before public launch
 
-All employers, case studies, dates, and outcomes are fictional presentation content. Update `index.html` with Thu Cuc’s verified experience, project evidence, and contact details before using the site as a real public portfolio. The visuals are CSS-native, so the demo does not fabricate personal photography or client evidence.
+Confirm permission to use client names, logos, campaign art and any third-party likenesses. CRM and Zalo screenshots that contained customer data were intentionally excluded.
